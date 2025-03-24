@@ -1,0 +1,19 @@
+{
+  "name": "neonui",
+  "version": "1.0.0",
+  "description": "A JavaScript library for neon-themed UI elements.",
+  "main": "dist/neonui.js",
+  "scripts": {
+    "build": "echo \"No build steps yet\""
+  },
+  "author": "Ronnie Harrod",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/neonui/issues"
+  },
+  "homepage": "https://github.com/yourusername/neonui#readme"
+}
