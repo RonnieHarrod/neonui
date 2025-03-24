@@ -1,0 +1,9 @@
+.neon-glow{
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0% { opacity: 1; text-shadow: 0 0 5px cyan; }
+    50% { opacity: 0.8; text-shadow: 0 0 10px cyan; }
+    50% { opacity: 1; text-shadow: 0 0 15px cyan; }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonUI Demo</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <style>
+        body { background-color: black; color: white; text-align: center; padding: 50px; }
+        button { font-size: 20px; padding: 10px 20px; background: none; cursor: pointer; }
+        h1 { font-size: 36px; }
+    </style>
+</head>
+<body>
+    
+    <h1 id="title">NeonUI.js Demo</h1>
+    <button id="glowButton">Glowing Button</button>
+    <div id="mySpinner"></div>
+    <div id="myElement" style="width: 200px; height: 100px; margin-top: 20px;">Hover me!</div>
+
+    <div id="neonBackground" style="width: 100%; height: 200px; margin-top: 20px;"></div>
+    <div id="neonTooltip" style="display: inline-block; padding: 20px; margin-top: 20px; background-color: black;">Hover over me!</div>
+    <div id="progressBar" style="width: 100%; height: 30px; margin-top: 20px;"></div>
+    <div id="neonFadeElement" style="width: 200px; height: 50px; background-color: black; color: white; padding: 10px; margin-top: 20px;">Hover to fade</div>
+
+
+    <script src="../src/NeonUI.js"></script>
+    <script>
+        NeonUI.glowButton("#glowButton", { color: "cyan", intensity: 2 });
+        NeonUI.neonText("#title", { color: "magenta", intensity: 2 });
+        NeonUI.smoothScroll();
+        NeonUI.cursorGlow("blue");
+
+        NeonUI.neonSpinner("#mySpinner", { size: "50px", color: "red" });
+        NeonUI.glowingBorder("#myElement", { color: "orange", intensity: 3 });
+        NeonUI.buttonRipple("#glowButton");
+        NeonUI.neonHoverEffect("#myElement", { color: "red", intensity: 2 });
+
+        NeonUI.neonBackground("#neonBackground", { color: "cyan", intensity: 2 });
+        NeonUI.neonTooltip("#neonTooltip", "This is a neon tooltip!", { color: "magenta", background: "black" });
+        NeonUI.neonProgressBar("#progressBar", 70, { color: "green", height: "20px" });
+        NeonUI.neonFadeInOut("#neonFadeElement", { color: "cyan", duration: "1s" });
+        NeonUI.neonScrollIndicator({ color: "magenta" });
+        NeonUI.neonTypingEffect("#neonFadeElement", "Typing effect with neon glow!", { color: "blue", typingSpeed: 100 });
+
+    </script>
+
+</body>
+</html>
